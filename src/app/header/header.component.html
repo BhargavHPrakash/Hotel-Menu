@@ -1,0 +1,57 @@
+<header class="fixed-top">
+    <div class="displayFlex" [ngClass]="{ 'blur-background': isNavbarBlurred }">
+        <div class="container-lg row">
+            <div class="col-6">
+                <h1>
+                    VeryLongHotelName
+                </h1>
+            </div>
+            <div class="col-6 row" *ngIf="mobileView">
+                <form class="col-11 position-style" role="search">
+                    <div class="input-container">
+                        <input type="mail" required="" />
+                        <label>Search...</label>
+                    </div>
+                </form>
+                <div class="dropdown position-style col-1 text-end">
+                    <a href="#" class="d-block link-body-emphasis dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../../assets/imgs/img2.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-6" *ngIf="!mobileView">
+                <div class="dropdown text-end">
+                    <a href="#" class="d-block link-body-emphasis dropdown-toggle" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <img src="../../assets/imgs/img2.jpg" alt="mdo" width="40" height="40" class="rounded-circle">
+                    </a>
+                    <ul class="dropdown-menu text-small">
+                        <li>
+                            <div class="input-container dropdown-item" style="width: 80%;">
+                                <input type="search" required="" placeholder="Search..." />
+                            </div>
+                        </li>
+                        <li><a class="dropdown-item" href="#">New project...</a></li>
+                        <li><a class="dropdown-item" href="#">Settings</a></li>
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sign out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr style="margin: 0;">
+</header>

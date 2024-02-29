@@ -1,0 +1,95 @@
+.displayFlex {
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur-background {
+    backdrop-filter: blur(10rem);
+    box-shadow: 0 8px 6px -6px #777;
+    transition: all .5s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    white-space: nowrap; 
+    width: 100%; 
+    overflow: hidden;
+    text-overflow: ellipsis; 
+}
+
+.position-style {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+/* search bar styling starts */
+
+.input-container {
+    position: relative;
+    width: 50%;
+    padding-right: 1rem;
+}
+
+.input-container label {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 16px;
+    color: black;
+    transition: all 0.5s ease-in-out;
+}
+
+.input-container input {
+    border: 0;
+    border-bottom: 3px solid black;
+    border-radius: 10%;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    color: Black;
+}
+
+.input-container input:focus {
+    border: none;
+    outline: none;
+    border-bottom: 3px solid black;
+}
+
+.input-container input:focus~label,
+.input-container input:valid~label {
+    top: -12px;
+    font-size: 12px;
+}
+
+label {
+    z-index: -1;
+}
+
+/* search bar styling ends */
+
+@media (max-width: 360px) {
+    /* Styles for mobile devices */
+    .displayFlex {
+        height: 3rem;
+    }
+    h1 {
+        font-size: calc(1.2rem + 1.5vw);
+    }
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    /* Styles for small tablets */
+    .displayFlex {
+        height: 3rem;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Styles for large tablets */
+    .displayFlex {
+        height: 3rem;
+    }
+}

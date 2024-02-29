@@ -1,0 +1,100 @@
+/* Carousel styling starts here*/
+
+.todays-special {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3.5rem 0 0 0;
+}
+
+.displayFlex {
+    height: 65%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    max-width: 85%;
+    height: auto;
+}
+
+.carousel-margin {
+    margin: 1rem 0 0 0;
+}
+
+.carousel-inner {
+    box-shadow: 25px 0px 20px -20px rgba(0,0,0,0.45),
+    -25px 0px 20px -20px rgba(0,0,0,0.45);
+}
+
+/* Carousel styling ends here*/
+
+/* Ads styling starts here */
+
+.ads {
+    height: 10rem;
+    background-color: cornflowerblue;
+    margin: 2rem 0 2rem 0;
+}
+
+/* Ads styling ends here */
+
+@media (max-width: 320px) {
+    /* Styles for mobile devices */
+}
+
+@media (min-width: 321px) and (max-width: 480px) {
+    /* Styles for small tablets */
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+    /* Styles for large tablets */
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    /* Styles for small laptops */
+    .todays-special{
+        margin-top: 5.5rem;
+    }
+    .displayFlex {
+        height: 30rem;
+    }    
+    img {
+        width: 35.5rem;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+    /* Styles for large laptops */
+    .todays-special{
+        margin-top: 5.5rem;
+    }
+    .displayFlex {
+        height: 30rem;
+    }
+    img {
+        width: 35.5rem;
+    }
+}
+
+@media (min-width: 1201px) {
+    /* Styles for desktops and TVs */
+    .todays-special{
+        margin-top: 5.5rem;
+    }
+    .displayFlex {
+        height: 30rem;
+    }
+    img {
+        width: 35.5rem;
+    }
+}
+
+/* 
+320px–480px: Mobile devices
+481px–768px: iPads and tablets
+769px–1024px: Small screens and laptops
+1025px–1200px: Desktops and large screens
+1201px and more: Extra large screens and TVs
+*/
